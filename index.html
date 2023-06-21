@@ -18,15 +18,102 @@
         <div class="nav">
           <div class='nav-title'>Conversions</div>
           <div class="options">
-            <div class='option'>Temperature</div>
-            <div class='option'>Weight</div>
-            <div class='option'>Distance</div>
+            <div class='option'><a href="#temp">Temperature</a></div>
+            <div class='option'><a href="#weight">Weight</a></div>
+            <div class='option'><a href="#dist">Distance</a></div>
           </div>
         </div>
 
         <div class="social-media"><img src='images/social-media.png'/></div>
 
       </div>
+    </div>
+
+    <div class='conversion-sec-container'>
+
+      <div class='conversion-sec'>
+
+        <div class='temperature-sec' id='temp'>
+          <div class='temp-sub-1'></div>
+
+          <div class='temp-sub-2'>
+            <img src='images/thermometer.png'/>
+            <div class='form-container'>
+              <fieldset class='form-fieldset'>
+                <legend>Temperature</legend>
+                <label for='cel-temp'>Celsius</label> <br/>
+                <input type='text' id='cel-temp' name='cel-temp'> <br/><br/>
+
+                <button class='convert-button' onclick="convertTemp()">Convert</button> <br/><br/>
+
+                <input type='text' id='far-temp' name='far-temp'> <br/>
+                <label for='far-temp'>Fahrenheit</label>
+              </fieldset>
+              <p>To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32</p>
+            </div>
+          </div>
+
+          <div class='temp-sub-3'>
+            <p>Celsius to Fahrenheit Conversion</p>
+          </div>
+
+        </div>
+
+        <div class='weight-sec' id='weight'>
+          <div class='weight-sub-1'></div>
+
+          <div class='weight-sub-2'>
+            <img src='images/mass.png'/>
+            <div class='form-container'>
+              <fieldset class='form-fieldset'>
+                <legend>Weight</legend>
+                <label for='KG-weight'>KG</label> <br/>
+                <input type='text' id='KG-weight' name='KG-weight'> <br/><br/>
+
+                <button class='convert-button' onclick="convertWeight()">Convert</button> <br/><br/>
+
+                <input type='text' id='pound-weight' name='pound-weight'> <br/>
+                <label for='pound-weight'>Pounds</label>
+              </fieldset>
+              <p>To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205</p>
+            </div>
+          </div>
+
+          <div class='weight-sub-3'>
+            <p>Kilograms to Pound Conversion</p>
+          </div>
+
+        </div>
+
+        <div class='distance-sec' id='dist'>
+
+          <div class='distance-sub-1'></div>
+
+          <div class='distance-sub-2'>
+            <img src='images/speed.png'/>
+            <div class='form-container'>
+              <fieldset class='form-fieldset'>
+                <legend>Distance</legend>
+                <label for='km-dist'>KM</label> <br/>
+                <input type='text' id='km-dist' name='km-dist'> <br/><br/>
+
+                <button class='convert-button' onclick="convertDist()">Convert</button> <br/><br/>
+
+                <input type='text' id='mile-dist' name='mile-dist'> <br/>
+                <label for='mile-dist'>Miles</label>
+              </fieldset>
+              <p>To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609</p>
+            </div>
+          </div>
+
+          <div class='distance-sub-3'>
+            <p>Kilometers to Miles Conversion</p>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </body>
