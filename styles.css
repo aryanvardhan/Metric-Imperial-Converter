@@ -171,3 +171,25 @@
   background-color: #27FCF6;
   height: 20px;
 }
+
+.footer-container {
+  background-color: #A1DD6F;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.home-link {
+  margin-left: 100px;
+}
+
+.home-link img {
+  height: 40px;
+  width: 40px;
+}
